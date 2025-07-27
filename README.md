@@ -101,7 +101,7 @@ shiny run --reload --launch-browser app.py
 ```
 
 **Use in the browser**
-1. **Guide (high‑res structure):**
+1. **Guide (high‑res structure)**
 2. **Low‑res MSI:** select one test image
 3. Set **Epochs** (e.g., `50`) and **SSIM weight** (e.g., `0.15`)  
 4. Click **Run SR** to generate the super‑resolved output
