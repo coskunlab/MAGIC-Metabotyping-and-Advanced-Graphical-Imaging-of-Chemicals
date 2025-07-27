@@ -192,7 +192,7 @@ DOI: (pending)
 
 ## 🔐 License
 
-This project is released for academic and non-commercial use only.
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
 ---
 
