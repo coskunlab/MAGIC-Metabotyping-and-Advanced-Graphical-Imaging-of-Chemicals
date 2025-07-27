@@ -76,8 +76,36 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 ---
 
 ## 🧪 3. Demo
+### Interactive quickstart (Python **Shiny** app)
 
-### ▶️ Demo on small simulated dataset
+The Shiny app (`app.py`) demonstrates **Guided Super‑Resolution (GSR)** on a single low‑res MSI channel using a high‑res guide.
+
+**Run**
+```bash
+# if not already installed via requirements
+pip install shiny pytorch_msssim super-image opencv-python pillow scikit-image matplotlib
+
+# launch (either works)
+python app.py
+# or:
+shiny run --reload --launch-browser app.py
+```
+
+**Use in the browser**
+1. **Guide (high‑res structure):**
+2. **Low‑res MSI:** select one test image
+3. Set **Epochs** (e.g., `50`) and **SSIM weight** (e.g., `0.15`)  
+4. Click **Run SR** to generate the super‑resolved output
+
+**What you’ll see**
+- Left: uploaded **Guide** image  
+- Middle: **Low‑res** MSI  
+- Right: **Super‑resolved** MSI (viridis) produced by the Two‑Input U‑Net (with EDSR pre‑upsampling)
+
+**Typical runtime (per image)**
+- GPU: ~20–40 s for 100 epochs
+
+### ▶️ Demo on small clozapine dataset
 
 Use the `demo_data_clozapine/` directory (not included here) or subset your own data for testing.
 
