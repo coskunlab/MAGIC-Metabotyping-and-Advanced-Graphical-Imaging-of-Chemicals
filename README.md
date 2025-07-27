@@ -105,9 +105,9 @@ shiny run --reload --launch-browser app.py
 **Typical runtime (per image)**
 - GPU: ~20–40 s for 100 epochs
 
-### ▶️ Demo on small clozapine dataset
+## ▶️ 4. Reproducing the results in clozapine dataset
 
-Use the `demo_data_clozapine/` directory (not included here) or subset your own data for testing.
+Use the data in https://doi.org/10.6084/m9.figshare.29650292.v1 for reproducing the results in clozapine dataset.
 
 #### Step-by-Step
 
@@ -146,7 +146,7 @@ Use the `demo_data_clozapine/` directory (not included here) or subset your own 
 
 ---
 
-## 🧬 4. Usage on Your Data
+## 🧬 5. Usage on Your Data
 
 To apply this pipeline to your own MSI + structural image dataset:
 
