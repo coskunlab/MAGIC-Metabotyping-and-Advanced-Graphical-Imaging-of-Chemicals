@@ -1,6 +1,6 @@
 # MAGIC
 
-This repository provides the analysis pipeline for the **clozapine dose-response** mouse brain dataset using the MAGIC framework introduced in the manuscript: **Super Resolved Single-cell Spatial Metabobarcoding and Metabotyping for Unlimited Chemical Maps**
+This repository provides the analysis pipeline for the clozapine dose-response mouse brain dataset using the MAGIC framework introduced in the manuscript: **Super Resolved Single-cell Spatial Metabobarcoding and Metabotyping for Unlimited Chemical Maps**
 
 ---
 
@@ -78,7 +78,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 ## 🧪 3. Demo
 ### Interactive quickstart (Python **Shiny** app)
 
-The Shiny app (`app.py`) demonstrates **Guided Super‑Resolution (GSR)** on a single low‑res MSI channel using a high‑res guide.
+The Shiny app (`app.py`) demonstrates **Guided Super‑Resolution (GSR)** on a single low‑res MSI image using a high‑res guide.
 
 **Run**
 ```bash
@@ -133,17 +133,16 @@ Use the `demo_data_clozapine/` directory (not included here) or subset your own 
 - Barcode visualizations (bar plots, UMAPs, subgraphs)  
 - Per-cell predictions and AUC metrics
 
-#### ⏱️ Estimated Runtime (desktop CPU or GPU)
+#### ⏱️ Estimated Runtime (desktop GPU)
 
-| Step                              | Runtime (CPU)   | Runtime (GPU) |
-|----------------------------------|-----------------|---------------|
-| GSR on protein markers           | ~5 minutes      | ~2 minutes    |
-| Cell phenotyping                 | ~2 minutes      | ~1 minute     |
-| GNN on lipidomics (low-res)      | ~8 minutes      | ~3 minutes    |
-| GSR on top 15 lipid channels     | ~6 minutes      | ~3 minutes    |
-| RF classifier on barcodes        | ~4 minutes      | ~2 minutes    |
+| Step                             | Runtime (GPU) |
+|----------------------------------|-----------------|
+| GSR on protein markers           | ~5 hours        | 
+| Cell phenotyping                 | ~15 minutes     |
+| GNN on lipidomics (low-res)      | ~20 minutes     | 
+| GSR on top 15 lipid channels     | ~3.5 hours      | 
 
-> 💡 Total time: ~25 minutes (CPU), ~10 minutes (GPU)
+> 💡 Total time: ~9 hours (GPU)
 
 ---
 
