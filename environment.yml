@@ -1,0 +1,43 @@
+name: magic
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  # Core numerics & plotting
+  - numpy=1.26.4
+  - pandas=2.3.1
+  - scipy=1.15.3
+  - matplotlib=3.10.3
+  - seaborn=0.13.2
+  # Image I/O & processing
+  - scikit-image=0.25.2
+  - opencv=4.10.0  # conda opencv; pillow/tifffile pinned via pip below
+  # Notebooks / tooling
+  - jupyterlab
+  - ipykernel
+  # Graphs / single-cell
+  - networkx=3.3
+  - umap-learn=0.5.6
+  - anndata=0.10.7
+  - scanpy=1.10.3
+  - pip:
+      # PyTorch CUDA 12.6 wheels
+      - torch==2.7.1+cu126
+      - torchvision==0.22.1+cu126
+      - torchaudio==2.7.1+cu126
+      # Add-ons used by the demo
+      - pytorch-msssim==1.0.0
+      - super-image==0.2.0
+      - huggingface-hub==0.34.1
+      # Imaging wheels (pip versions)
+      - opencv-python==4.12.0.88
+      - Pillow==11.0.0
+      - tifffile==2025.5.10
+      # GNN + ML + headless notebooks
+      - torch-geometric>=2.5.3,<3.0.0
+      - scikit-learn==1.5.2
+      - papermill>=2.6.0
+      # Web demo (Python Shiny)
+      - shiny>=0.9.0
