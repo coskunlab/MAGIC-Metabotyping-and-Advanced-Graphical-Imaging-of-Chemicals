@@ -1,0 +1,40 @@
+# MAGIC / Clozapine demo + notebooks
+# CPU-friendly by default. For GPU wheels, install PyTorch/torchvision/torchaudio from pytorch.org.
+#
+# Core numerics & plotting
+numpy==1.26.4
+pandas==2.3.1
+scipy==1.15.3
+matplotlib==3.10.3
+seaborn==0.13.2
+
+# Image I/O & processing
+opencv-python==4.12.0.88
+Pillow==11.0.0
+scikit-image==0.25.2
+tifffile==2025.5.10
+
+# ML / DL
+torch==2.7.1
+torchvision==0.22.1
+torchaudio==2.7.1
+scikit-learn==1.5.2
+tqdm==4.67.1
+
+# PyTorch add-ons used by the demo
+pytorch-msssim==1.0.0
+super-image==0.2.0
+huggingface-hub==0.34.1
+
+# GNN + single-cell stack (for notebooks)
+torch-geometric>=2.5.3,<3.0.0
+scanpy>=1.10.0
+anndata>=0.10.7
+umap-learn>=0.5.6
+networkx>=3.3
+
+# Web demo (Python Shiny)
+shiny>=0.9.0
+
+# Optional: headless execution of notebooks
+papermill>=2.6.0
