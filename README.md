@@ -1,8 +1,6 @@
-# MAGIC - Clozapine Dataset Notebooks
+# MAGIC
 
-This repository provides the analysis pipeline for the **clozapine dose-response** mouse brain dataset using the MAGIC framework introduced in the manuscript:
-
-**Super Resolved Single-cell Spatial Metabobarcoding and Metabotyping for Unlimited Chemical Maps**
+This repository provides the analysis pipeline for the **clozapine dose-response** mouse brain dataset using the MAGIC framework introduced in the manuscript: **Super Resolved Single-cell Spatial Metabobarcoding and Metabotyping for Unlimited Chemical Maps**
 
 ---
 
@@ -15,7 +13,6 @@ This repository provides the analysis pipeline for the **clozapine dose-response
 | `lowres_metabolic_barcoding.ipynb` | Learns metabolic barcodes from low-resolution lipid features    |
 | `lipid_gsr.ipynb`                  | Applies GSR to key lipidomic MSI channels                       |
 | `superres_metabolic_barcoding.ipynb` | Refines metabolic barcodes using GSR-enhanced features        |
-| `notebooks.txt`                    | Index of notebooks                                              |
 
 ---
 
