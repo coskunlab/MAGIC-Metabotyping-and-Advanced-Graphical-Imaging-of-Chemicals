@@ -18,9 +18,9 @@ This repository provides the analysis pipeline for the **clozapine dose-response
 
 ## 🖥️ 1. System Requirements
 
-- **Operating Systems:** Windows 10/11, Ubuntu 20.04/22.04 (macOS not tested)
-- **Python Version:** 3.8 to 3.11
-- **Memory:** ≥16 GB RAM (≥32 GB recommended for large runs)
+- **Operating Systems:** Windows 10/11
+- **Python Version:** 3.10
+- **Memory:** ≥16 GB RAM
 - **GPU (optional):** CUDA-compatible GPU recommended for faster GSR training/inference
 
 ### 📦 Required Dependencies
@@ -40,8 +40,8 @@ pip install -r requirements.txt
 
 > ✅ Tested on:  
 > • Python 3.10  
-> • PyTorch 2.0.1 + CUDA 11.7  
-> • Windows 11 and Ubuntu 22.04
+> • PyTorch 2.7.1 + CUDA 12.6 
+> • Windows 11
 
 ---
 
@@ -70,7 +70,7 @@ pip install -r requirements.txt
 4. **(Optional GPU Support):** Install PyTorch with CUDA:
 
 ```bash
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
 ```
 
 ---
@@ -100,7 +100,7 @@ Use the `demo_data_clozapine/` directory (not included here) or subset your own 
 
 #### Expected Output
 
-- Super-resolved `.npy` or `.tiff` MSI images  
+- Super-resolved `.npy` MSI images  
 - Single-cell `AnnData` files with phenotypes and metabolite vectors  
 - Barcode visualizations (bar plots, UMAPs, subgraphs)  
 - Per-cell predictions and AUC metrics
@@ -124,7 +124,7 @@ Use the `demo_data_clozapine/` directory (not included here) or subset your own 
 To apply this pipeline to your own MSI + structural image dataset:
 
 1. **Preprocess**
-   - Align structural (fluorescence, IMC, H&E) image with MSI using BigWarp or equivalent.
+   - Align structural (fluorescence, IMC, H&E) image with MSI using ImageJ BigWarp, SIFT or equivalent.
    - Normalize MSI to [0,1] and convert to `.npy` or `.tiff`.
 
 2. **Run GSR**
