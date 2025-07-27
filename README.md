@@ -198,7 +198,7 @@ This project is released for academic and non-commercial use only.
 
 - Super-resolved MSI (Figshare): https://doi.org/10.6084/m9.figshare.29522213  
 - Single-cell `AnnData` (Figshare): https://doi.org/10.6084/m9.figshare.29524625
-
+- Clozapine dose-response mouse brain dataset (Figshare): https://doi.org/10.6084/m9.figshare.29650292.v
 ---
 
 ## 📁 Repository
