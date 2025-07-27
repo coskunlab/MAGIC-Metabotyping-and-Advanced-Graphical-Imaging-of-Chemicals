@@ -81,6 +81,8 @@ pip install -r requirements.txt
 ```bash
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
 ```
+> ⏱️ **Typical install time:**  
+> Installing the dependencies and setting up the environment typically takes **10-15 minutes** on a standard desktop with a stable internet connection.
 
 ---
 
