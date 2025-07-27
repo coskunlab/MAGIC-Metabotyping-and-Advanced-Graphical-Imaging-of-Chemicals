@@ -43,6 +43,15 @@ pip install -r requirements.txt
 > • PyTorch 2.7.1 + CUDA 12.6 
 > • Windows 11
 
+### 🧰 Reproducible environments (Conda YAML)
+
+For a fully reproducible setup, use the provided Conda environment files:
+
+- **GPU (CUDA 12.6):** `environment.yml`
+- **CPU‑only:** `environment-cpu.yml`
+
+These pin versions for PyTorch, imaging, and the single‑cell stack. If you prefer `pip`, you can still use `requirements.txt`.
+
 ---
 
 ## ⚙️ 2. Installation Guide
