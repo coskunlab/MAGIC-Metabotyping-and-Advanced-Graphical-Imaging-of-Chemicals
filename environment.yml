@@ -39,5 +39,7 @@ dependencies:
       - torch-geometric>=2.5.3,<3.0.0
       - scikit-learn==1.5.2
       - papermill>=2.6.0
+      # Pseudotime
+      - scFates==1.1.1
       # Web demo (Python Shiny)
       - shiny>=0.9.0
