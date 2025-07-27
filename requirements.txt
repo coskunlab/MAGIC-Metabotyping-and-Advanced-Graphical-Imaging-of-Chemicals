@@ -1,6 +1,11 @@
-# MAGIC / Clozapine demo + notebooks
-# CPU-friendly by default. For GPU wheels, install PyTorch/torchvision/torchaudio from pytorch.org.
-#
+# MAGIC / Clozapine demo + notebooks (CUDA build)
+# Uses PyTorch CUDA 12.6 wheels. Pip will pull GPU wheels from the PyTorch index below.
+# If installation fails, ensure your GPU drivers are up to date, or use the CPU requirements instead.
+
+--extra-index-url https://download.pytorch.org/whl/cu126
+# Prebuilt ops for torch-geometric (CUDA 12.6 / torch 2.7.1)
+--find-links https://data.pyg.org/whl/torch-2.7.1+cu126.html
+
 # Core numerics & plotting
 numpy==1.26.4
 pandas==2.3.1
@@ -14,10 +19,10 @@ Pillow==11.0.0
 scikit-image==0.25.2
 tifffile==2025.5.10
 
-# ML / DL
-torch==2.7.1
-torchvision==0.22.1
-torchaudio==2.7.1
+# ML / DL (CUDA 12.6 wheels)
+torch==2.7.1+cu126
+torchvision==0.22.1+cu126
+torchaudio==2.7.1+cu126
 scikit-learn==1.5.2
 tqdm==4.67.1
 
@@ -27,6 +32,7 @@ super-image==0.2.0
 huggingface-hub==0.34.1
 
 # GNN + single-cell stack (for notebooks)
+# The find-links above points pip to CUDA-matched wheels for these extensions.
 torch-geometric>=2.5.3,<3.0.0
 scanpy>=1.10.0
 anndata>=0.10.7
